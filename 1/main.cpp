@@ -141,6 +141,7 @@ class Truck{
                 if(!this->route1.Near(this->route2.Points()[i], 0.0001)){ // Si el camión no pasó cerca del punto
                     // Escribimos en el archivo que el camión no pasó por el punto
                     f << "El camion no paso por el punto: " << this->route2.Points()[i].Lat() << ", " << this->route2.Points()[i].Lon() << endl;
+                    cout << "El camion no paso por el punto: " << this->route2.Points()[i].Lat() << ", " << this->route2.Points()[i].Lon() << endl;
                 }
             }
         }
